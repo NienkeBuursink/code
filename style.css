@@ -1,0 +1,52 @@
+* {margin: 0;
+}
+
+img {
+    max-width: 80%;
+}
+
+
+/* fonts */
+@font-face {
+    font-family: Sobiscuit;
+    src: url(fonts/sobiscuit/Sobiscuit.ttf);
+}
+
+
+/* header */
+header ul {
+    background-color: #00a99d;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header li a, header li {
+    color: white;
+    text-decoration: none;
+}
+
+/* main */
+
+main {
+    background-color: #8ae6ff;
+}
+
+h1 {
+    font-family: Sobiscuit, 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    color: #006837;
+}
+
+/* footer */
+
+footer {
+    background-color: #00a99d;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
