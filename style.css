@@ -1,16 +1,20 @@
 * {margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     max-width: 80%;
 }
-
 
 /* fonts */
 @font-face {
     font-family: Sobiscuit;
     src: url(fonts/sobiscuit/Sobiscuit.ttf);
 }
+
 
 
 /* header */
@@ -26,6 +30,8 @@ header li a, header li {
     text-decoration: none;
 }
 
+
+
 /* main */
 
 main {
@@ -39,6 +45,43 @@ h1 {
     color: #006837;
 }
 
+h2 {
+    color: #006837;
+}
+
+p {
+    color: #006837;
+    background-color: white;
+}
+
+/* doemee */
+
+.wattedoen {
+    color: #006837;
+    background-color: white;
+}
+
+.winnaars ul {
+    list-style: none;
+}
+
+/* gegevens */
+
+
+/* bedankt */
+
+#henk {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* footer */
 
 footer {
@@ -49,4 +92,8 @@ footer ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+}
+
+footer h2 {
+    color: white;
 }
