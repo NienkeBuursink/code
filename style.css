@@ -1,4 +1,5 @@
 * {margin: 0;
+    padding: 0;
 }
 
 html {
@@ -13,6 +14,10 @@ img {
 @font-face {
     font-family: Sobiscuit;
     src: url(fonts/sobiscuit/Sobiscuit.ttf);
+    font-family: Typewriter Dry;
+    src: url(fonts/jmh_typewriter_dry/);
+    font-family: Caviar Dreams;
+    src: url(fonts/caviar_dreams/CaviarDreams_Bold.ttf);
 }
 
 
@@ -28,6 +33,8 @@ header ul {
 header li a, header li {
     color: white;
     text-decoration: none;
+    font-family: Typewriter dry, 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 
@@ -36,22 +43,40 @@ header li a, header li {
 
 main {
     background-color: #8ae6ff;
+    padding-top: 1px;
 }
 
 h1 {
     font-family: Sobiscuit, 'Courier New', Courier, monospace;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     color: #006837;
+    background-color: #ccffcc;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
 }
 
 h2 {
     color: #006837;
+    font-family: Typewriter Dry, 'Courier New', Courier, monospace;
 }
 
 p {
     color: #006837;
     background-color: white;
+    font-family: Caviar Dreams, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* index */
+
+.indexfoto {
+    display: flex;
+    justify-content: center;
 }
 
 /* doemee */
@@ -59,10 +84,18 @@ p {
 .wattedoen {
     color: #006837;
     background-color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.wattedoen {
+    font-family: Caviar Dreams, 'Courier New', Courier, monospace;
 }
 
 .winnaars ul {
     list-style: none;
+
 }
 
 /* gegevens */
@@ -96,4 +129,7 @@ footer ul {
 
 footer h2 {
     color: white;
+    display: flex;
+    justify-content: center;
 }
+
