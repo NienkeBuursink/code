@@ -24,7 +24,7 @@
     <form>
         <div class="invullen">
             <label for="voornaam">Voornaam:</label>
-            <input type="text">
+            <input type="text" id="voornaam">
         </div>
 
         <div class="invullen">
@@ -34,7 +34,7 @@
 
         <div class="invullen">
             <label for="telnummer">Telefoonnummer:</label>
-            <input type="text" id="telnummer">
+            <input type="text" id="telefoonnummer">
         </div>
 
         <div class="invullen">
@@ -57,24 +57,32 @@
             <input type="text" id="huisnummer">
         </div>
 
-        <div class="invullen">
+        <div class="invullen2">
             <label for="typen">Voeg hier je foto en verhaal toe:</label>
             <input type="text" id="typen"
             placeholder="Type hier jouw verhaal...">
         </div>
     </form>
 
-    <a href="bedankt.html"><img src="images/bverstuur.png" alt="Klik hier om te versturen!"></a>
+    <div id="knoppie2">
+        <a href="bedankt.html"><img src="images/bverstuur.png" alt="Klik hier om te versturen!"></a>
+    </div>
+
     </main>
 
     <footer id="bottom">
         <h2>CONTACT</h2>
         <ul>
-            <li><a href="#"><img src="images/maps.png" alt="locatie logo"></a></li>
-            <li><a href="#"><img src="images/insta.png" alt="instagram logo"></a></li>
-            <li><a href="#"><img src="images/facebook.png" alt="facebook logo"></a></li>
-            <li><a href="#"><img src="images/mail.png" alt="e-mail logo"></a></li>
-            <li><img src="images/naamlogo.png" alt="Groene grachten logo"></li>
+            <div class="iconen">
+                <li><a href="https://www.google.com/maps/place/Leliegracht/@52.3753015,4.8848117,18z/data=!3m1!4b1!4m6!3m5!1s0x47c609c500cb7c3d:0x469efccd4a6bf32b!8m2!3d52.3752928!4d4.8861049!16s%2Fg%2F120mnlg2?entry=ttu">
+                    <img src="images/maps.png" alt="locatie logo"></a></li>
+                <li><a href="#"><img src="images/insta.png" alt="instagram logo"></a></li>
+                <li><a href="#"><img src="images/facebook.png" alt="facebook logo"></a></li>
+                <li><a href="#"><img src="images/mail.png" alt="e-mail logo"></a></li>
+            </div>
+            <div class="naamlogo">
+                <li><img src="images/naamlogo.png" alt="Groene grachten logo"></li>
+            </div>
         </ul>
     </footer>
 </body>

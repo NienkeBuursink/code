@@ -10,6 +10,10 @@ img {
     max-width: 80%;
 }
 
+body {
+    background-color: #00a99d;
+}
+
 /* fonts */
 @font-face {
     font-family: Sobiscuit;
@@ -18,6 +22,8 @@ img {
     src: url(fonts/jmh_typewriter_dry/);
     font-family: Caviar Dreams;
     src: url(fonts/caviar_dreams/CaviarDreams_Bold.ttf);
+    font-family: Bubblegun;
+    src: url(fonts/bubblegun/bubblegun.ttf);
 }
 
 
@@ -27,7 +33,8 @@ header ul {
     background-color: #00a99d;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header li a, header li {
@@ -35,6 +42,11 @@ header li a, header li {
     text-decoration: none;
     font-family: Typewriter dry, 'Courier New', Courier, monospace;
     font-weight: bold;
+    font-size: 23px;
+}
+
+header img {
+    max-height: 70px;
 }
 
 
@@ -44,6 +56,7 @@ header li a, header li {
 main {
     background-color: #8ae6ff;
     padding-top: 1px;
+    padding-bottom: 30px;
 }
 
 h1 {
@@ -60,16 +73,29 @@ h1 {
 
 h2 {
     color: #006837;
-    font-family: Typewriter Dry, 'Courier New', Courier, monospace;
+    font-family: bubblegun, 'Courier New', Courier, monospace;
+    padding: 15px;
+    font-size: 25px;
 }
 
 p {
     color: #006837;
     background-color: white;
     font-family: Caviar Dreams, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     margin: 15px;
     border-radius: 15px;
     padding: 15px;
+    font-size: 13px;
+}
+
+.p1 {
+    text-align: center;
+}
+
+.knoppie a {
+    display: flex;
+    justify-content: center;
 }
 
 /* index */
@@ -77,6 +103,13 @@ p {
 .indexfoto {
     display: flex;
     justify-content: center;
+}
+
+.indexfoto img {
+    max-width: 40%;
+    margin: 15px;
+    margin-right: 0;
+    border-radius: 15px;
 }
 
 /* doemee */
@@ -87,19 +120,94 @@ p {
     border-radius: 15px;
     margin: 15px;
     padding: 15px;
+    font-family: Caviar Dreams, 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
-.wattedoen {
-    font-family: Caviar Dreams, 'Courier New', Courier, monospace;
+.wattedoen h2 {
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.wattedoen ul {
+    list-style-type: circle;
+    margin: 15px;
+    margin-top: 0%;
+    font-size: 13px;
+}
+
+.wattedoen li {
+    margin-bottom: 10px;
 }
 
 .winnaars ul {
     list-style: none;
+}
 
+.winnaars li {
+    margin: 15px;
+}
+
+.winnaars img {
+    border-radius: 15px;
+    min-width: 100%;
 }
 
 /* gegevens */
 
+form {
+    margin-top: 30px;
+}
+
+input {
+    border-radius: 15px;
+    border-color: transparent;
+    padding: 5px;
+    color: #006837;
+    font-family: caviar dreams, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 50%;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid #006837;
+}
+
+.invullen {
+    margin: 5px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: bubblegun, 'Courier New', Courier, monospace;
+    color: #006837;
+}
+
+.invullen2 {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: bubblegun, 'Courier New', Courier, monospace;
+    color: #006837;
+}
+
+.invullen2 input {
+    padding-bottom: 200px;
+    width: auto;
+}
+
+::placeholder {
+    color: #006837;
+    font-family: caviar dreams, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+#knoppie2 img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
 
 /* bedankt */
 
@@ -107,12 +215,15 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 50%;
 }
 
-.buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.p2 p {
+    text-align: center;
+    background-color: transparent;
+    font-size: 16px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
 }
 
 /* footer */
@@ -121,15 +232,33 @@ footer {
     background-color: #00a99d;
 }
 
-footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
 footer h2 {
     color: white;
     display: flex;
     justify-content: center;
+    font-family: typewriter dry, 'Courier New', Courier, monospace;
 }
 
+footer ul {
+    list-style: none;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconen {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 60%;
+    margin-left: 7px;
+}
+
+.iconen img {
+    min-width: 50px;
+}
+
+.naamlogo {
+    display: flex;
+    align-items: end;
+    max-width: 35%;
+}
