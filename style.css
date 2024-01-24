@@ -18,17 +18,103 @@ body {
 @font-face {
     font-family: Sobiscuit;
     src: url(fonts/sobiscuit/Sobiscuit.ttf);
-    font-family: Typewriter Dry;
+    font-family: 'Typewriter Dry';
     src: url(fonts/jmh_typewriter_dry/);
-    font-family: Caviar Dreams;
+    font-family: 'Caviar Dreams';
     src: url(fonts/caviar_dreams/CaviarDreams_Bold.ttf);
     font-family: Bubblegun;
     src: url(fonts/bubblegun/bubblegun.ttf);
 }
 
+/* icoontjes */
 
+#belletje {
+    position: absolute;
+    top: 315px;
+    right: 25px;
+    max-width: 50px;
+    transform: rotate(-20deg);
+    animation: bubbels 3.5s infinite ease-in-out;
+}
+
+#belletje2 {
+    position: absolute;
+    top: 335px;
+    right: 65px;
+    max-width: 35px;
+    animation: bubbels 3s infinite ease-in-out;
+}
+
+#eendje {
+    position: absolute;
+    transform: scaleX(-1);
+    top: 357px;
+    right: 130px;
+    max-width: 65px;
+}
+
+#grachtje {
+    position: absolute;
+    top: 632px;
+    right: 50px;
+    max-width: 90px;
+}
+
+#visje {
+    position: absolute;
+    top: 500px;
+    right: 15px;
+    rotate: 120deg;
+    max-width: 100px;
+    animation: vissie 3s infinite ease-in-out;
+}
+
+#plantje {
+    position: absolute;
+    top: 585px;
+    right: 260px;
+}
+
+/* animaties */
+
+@keyframes bubbels {
+    0%, 100% {
+        transform: rotate(0) scale(1) translateY(0%);
+    }
+
+    50% {
+        transform: rotate(-10deg) scale(0.85) translateY(15%);
+    }
+}
+
+
+@keyframes vissie {
+    0%, 100% {
+        transform: translateX(0%) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(20%) rotate(10deg);
+    }
+}
+
+@keyframes henk {
+    0%, 100% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
 
 /* header */
+
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 header ul {
     background-color: #00a99d;
     list-style: none;
@@ -40,7 +126,7 @@ header ul {
 header li a, header li {
     color: white;
     text-decoration: none;
-    font-family: Typewriter dry, 'Courier New', Courier, monospace;
+    font-family: 'Typewriter dry', 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 23px;
 }
@@ -81,7 +167,7 @@ h2 {
 p {
     color: #006837;
     background-color: white;
-    font-family: Caviar Dreams, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Caviar Dreams', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin: 15px;
     border-radius: 15px;
@@ -91,6 +177,7 @@ p {
 
 .p1 {
     text-align: center;
+    margin-top: 30px;
 }
 
 .knoppie a {
@@ -103,6 +190,8 @@ p {
 .indexfoto {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .indexfoto img {
@@ -120,7 +209,7 @@ p {
     border-radius: 15px;
     margin: 15px;
     padding: 15px;
-    font-family: Caviar Dreams, 'Courier New', Courier, monospace;
+    font-family: 'Caviar Dreams', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 
@@ -164,7 +253,7 @@ input {
     border-color: transparent;
     padding: 5px;
     color: #006837;
-    font-family: caviar dreams, 'Courier New', Courier, monospace;
+    font-family: 'Caviar Dreams', 'Courier New', Courier, monospace;
     font-weight: bold;
     width: 50%;
     outline: none;
@@ -198,16 +287,11 @@ input:focus {
 
 ::placeholder {
     color: #006837;
-    font-family: caviar dreams, 'Courier New', Courier, monospace;
+    font-family: 'Caviar Dreams', 'Courier New', Courier, monospace;
     font-weight: bold;
     opacity: 0.5;
 }
 
-#knoppie2 img {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
 
 /* bedankt */
 
@@ -216,6 +300,7 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
     max-width: 50%;
+    animation: henk 7s infinite ease-in-out;
 }
 
 .p2 p {
@@ -236,7 +321,7 @@ footer h2 {
     color: white;
     display: flex;
     justify-content: center;
-    font-family: typewriter dry, 'Courier New', Courier, monospace;
+    font-family: 'typewriter dry', 'Courier New', Courier, monospace;
 }
 
 footer ul {
@@ -262,3 +347,4 @@ footer ul {
     align-items: end;
     max-width: 35%;
 }
+
